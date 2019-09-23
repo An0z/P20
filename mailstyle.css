@@ -1,0 +1,131 @@
+ @font-face {
+  font-family: parkLane;
+  src: url(./FONT/ParkLaneNF.ttf);
+}
+
+ @font-face {
+  font-family: poiretOne;
+  src: url(./FONT/PoiretOne-Regular.ttf);
+}
+
+img{
+  margin-top:10%;
+  margin-left:25%;
+}
+svg{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding:15px;
+}
+body{
+margin:auto;
+width:60%;
+background-color:#BBB;
+}
+
+h1
+{
+font-family:parkLane;
+margin-top:10%;
+color:#FFF;
+font-weight: 100;
+font-size:2.5em;
+text-align:center;
+padding:0;
+}
+
+p
+{
+  color:#FFF;
+font-family: poiretOne;
+font-size:1.5em;
+cursor:pointer;
+display:block;
+padding:55px;
+}
+
+
+#border {
+  border: 4px solid #F2F1EC;
+border-top: 20px solid #F2F1EC;
+border-bottom: 20px solid #F2F1EC;
+  background-color: #211F1F;
+  /*padding-bottom:240px;*/
+  
+  margin-top:10px;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  left:0;
+  right:0;
+  opacity:1;
+}
+
+/*ORIGINAL CODE BY KONSTANTIN IVANOV
+https://codepen.io/mr-tamagotchi/pen/yzRQba*/
+.button {
+  text-transform: uppercase;
+  font-family: poiretOne;
+  letter-spacing: 0.4em;
+  font-size: 1.5em;
+  position: relative;
+  text-decoration: none;
+  padding: 0.5em;
+  box-shadow: inset 0 0 0 1px WHITE;
+  min-width: 340px;
+  text-align: center;
+}
+.button__label {
+  display: block;
+  background-color: transparent;
+  color: WHITE;
+  padding: 1.5em 2em;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+.button:hover .button__label, .button:focus .button__label {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.button__ornament {
+  position: absolute;
+}
+.button__ornament--vertical {
+  top: -0.5em;
+  bottom: -0.5em;
+  left: 0;
+  right: 0;
+}
+.button__ornament--horisontal {
+  left: -0.5em;
+  right: -0.5em;
+  top: 0;
+  bottom: 0;
+}
+.button__ornament-top-bottom, .button__ornament-left-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/*/////////////////////////////////////////////*/
+
+#sign{
+    color:#000;
+font-size:1em;
+text-align: center;
+padding:25px;
+}
+
+p a {
+  font-size:1.2em;
+  color: #000;
+  font-weight:bold;
+  text-transform: uppercase;
+
+}
