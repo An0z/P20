@@ -99,6 +99,7 @@ if(data!=null)
 	else
 		id=cook;
 	
+	cook = getCookie('id');
 
 	console.log("myID ="+cook);
 	document.getElementsByClassName('text-logo')[0].innerHTML =" "+ cook;
