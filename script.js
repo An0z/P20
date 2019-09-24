@@ -94,13 +94,11 @@ if(data!=null)
 	cook = getCookie('id');
 	console.log("get id ="+id);
 	console.log("get cookie ="+cook);
-	if(id == null || id=='undefined' || cook == null || cook == 'undefined')
-	{
-	if(cook =="" ||cook==null || cook == 'undefined')
+	if((cook =="" ||cook==null || cook == 'undefined') && (id!=nul||id!=""))
 		document.cookie = "id="+id+"; expires=Thu, 05 Dec 2019 00:00:00 UTC; path=/;";
 	else
 		id=cook;
-	}
+	
 
 	console.log("cook ="+cook);
 	document.getElementsByClassName('text-logo')[0].innerHTML =" "+ cook;
