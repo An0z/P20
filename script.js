@@ -101,7 +101,7 @@ if(data!=null)
 
 
 	console.log("id ="+cook);
-	document.getElementsByClassName('text-logo')[0].innerHTML =" "+ id;
+	document.getElementsByClassName('text-logo')[0].innerHTML =" "+ cook;
 
 }
 
