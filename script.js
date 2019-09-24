@@ -100,7 +100,7 @@ if(data!=null)
 		id=cook;
 	
 
-	console.log("cook ="+cook);
+	console.log("myID ="+cook);
 	document.getElementsByClassName('text-logo')[0].innerHTML =" "+ cook;
 
 }
