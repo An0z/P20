@@ -90,8 +90,10 @@ if(data!=null)
 	id = letterValue(data.slice(0,4));
 	id = id.join("");
 }
-
+	
 	cook = getCookie('id');
+	console.log("get id ="+id);
+	console.log("get cookie ="+cook);
 	if(id == null || id=='undefined' || cook == null || cook == 'undefined')
 	if(cook =="" ||cook==null || cook == 'undefined')
 		document.cookie = "id="+id+"; expires=Thu, 05 Dec 2019 00:00:00 UTC; path=/;";
@@ -99,7 +101,7 @@ if(data!=null)
 		id=cook;
 
 
-	console.log("id ="+cook);
+	console.log("cook ="+cook);
 	document.getElementsByClassName('text-logo')[0].innerHTML =" "+ cook;
 
 }
