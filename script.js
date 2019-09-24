@@ -92,12 +92,11 @@ if(data!=null)
 }
 
 	cook = getCookie('id');
-	if(id == null || cook == null || cook == 'undefined')
+	if(id == null || id=='undefined' || cook == null || cook == 'undefined')
 	if(cook =="" ||cook==null || cook == 'undefined')
 		document.cookie = "id="+id+"; expires=Thu, 05 Dec 2019 00:00:00 UTC; path=/;";
 	else
 		id=cook;
-
 
 
 	console.log("id ="+cook);
