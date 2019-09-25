@@ -355,8 +355,8 @@ li
 
 	margin:0;
 	position:absolute;
-	width:12vw;
 }
+
 
 #signId {
   font-family: 'nanumScript';
@@ -383,6 +383,7 @@ to{
 
 #section
 {
+width:12vw;
 	stroke-width:2px;
 	stroke-dashoffset: 0;
   	stroke-dasharray: 1645;
