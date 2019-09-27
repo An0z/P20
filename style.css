@@ -52,7 +52,8 @@ body{
 margin:auto;
 width: 100%;
 height: 100%;
-background-color:#211F1F;
+/*background-color:#211F1F;*/
+background-image:url("./bpaperBG.jpg");
 }
 
 h1
@@ -67,6 +68,7 @@ text-align:center;
 
 #thick-border {
 /*position: absolute;*/
+opacity:0.9;
      margin: auto;
      top: 2px;
      right: 0;
@@ -97,13 +99,13 @@ main{
 
 #checkArticle
 {
-	margin:auto;
-	position:relative;
-	bottom: 10%;
-	margin-top:18%;
-	margin-left:10%;
-	transition: transform 1s,
-				opacity 2s 1s;
+  margin:auto;
+  position:relative;
+  bottom: 10%;
+  margin-top:18%;
+  margin-left:10%;
+  transition: transform 1s,
+        opacity 2s 1s;
 }
 
 
@@ -116,7 +118,7 @@ input[type="checkbox"] {
 }
 
 label{
-	color:#FFF;
+  color:#FFF;
 font-family: poiretOne;
 font-size:2vw;
 cursor:pointer;
@@ -135,7 +137,7 @@ top: .3em;
 
 #checkText
 {
-	display: inline-block;
+  display: inline-block;
 }
 
 input[type="checkbox"]:checked ~ label svg path {
@@ -158,7 +160,7 @@ label svg path {
   right:0;
   opacity:0;
   transition:  1s, 
-			  opacity 1.5s;
+        opacity 1.5s;
 }
 
 /*ORIGINAL CODE BY KONSTANTIN IVANOV
@@ -252,7 +254,7 @@ https://codepen.io/mr-tamagotchi/pen/yzRQba*/
 
 #identification
 {
-	position: absolute;
+  position: absolute;
   bottom:1vh;
 }
 
@@ -266,7 +268,7 @@ https://codepen.io/mr-tamagotchi/pen/yzRQba*/
 
 #save *
 {
-	color:#FFF;
+  color:#FFF;
 }
 
 #save h1{
@@ -283,11 +285,11 @@ https://codepen.io/mr-tamagotchi/pen/yzRQba*/
 
 @keyframes drawLines {
 from{
-	width: 0%;
+  width: 0%;
 }
 
 to{
-	width:15%;
+  width:15%;
 }
 }
 
@@ -299,10 +301,10 @@ to{
   height:1em;
   align-items: center;
   color: white;
-	margin:auto;
-	font-size: 14vw;
-	text-align:center;
-	font-family:raconteurNF;
+  margin:auto;
+  font-size: 14vw;
+  text-align:center;
+  font-family:raconteurNF;
 }
 
 .center
@@ -315,36 +317,36 @@ to{
 
 #identificationCoord
 {
-	position: relative;
-	margin:0;
-	margin-top:5%;
+  position: relative;
+  margin:0;
+  margin-top:5%;
   margin-bottom:30px;
-	display:block;
+  display:block;
 }
 
 #identificationCoord p
 {
-	margin-left:5%;
-	width:50%;
-	display: inline;
-	font-size: 7vw;
-	font-family:raconteurNF;
+  margin-left:5%;
+  width:50%;
+  display: inline;
+  font-size: 7vw;
+  font-family:raconteurNF;
 }
 
 #coord
 {
-	float:right;
-	display:inline-block;
-	margin:0;
-	margin-top:-2%;
-	margin-right:5%;
+  float:right;
+  display:inline-block;
+  margin:0;
+  margin-top:-2%;
+  margin-right:5%;
 }
 
 #coord li
 {
-	text-align:right;
-	font-size:5vw;
-	font-family:parkLane;
+  text-align:right;
+  font-size:5vw;
+  font-family:parkLane;
 }
 
 li
@@ -353,8 +355,8 @@ li
 #identificationCoord svg
 {
 
-	margin:0;
-	position:absolute;
+  margin:0;
+  position:absolute;
 }
 
 
@@ -368,15 +370,15 @@ li
 
 @keyframes draw {
 from{
-	stroke-dashoffset:100%;
-	/*opacity:0;*/
-	/*fill:transparent;*/
+  stroke-dashoffset:100%;
+  /*opacity:0;*/
+  /*fill:transparent;*/
 }
 
 to{
-	stroke-dashoffset:0;
-	/*opacity:1;*/
-	/*fill:#952A29;*/
+  stroke-dashoffset:0;
+  /*opacity:1;*/
+  /*fill:#952A29;*/
 }
 }
 
@@ -384,29 +386,29 @@ to{
 #section
 {
 width:12vw;
-	stroke-width:2px;
-	stroke-dashoffset: 0;
-  	stroke-dasharray: 1645;
+  stroke-width:2px;
+  stroke-dashoffset: 0;
+    stroke-dasharray: 1645;
   left:0 !important;
   right: 0 !important;
   margin-left:auto !important;
   margin-right:auto !important;
   display:block !important;
-	top:-52% !important;
+  top:-52% !important;
   animation:drawSection 15s;
 }
 
 @keyframes drawSection {
 from{
-	stroke-dashoffset:1645;
-	/*opacity:0;*/
-	/*fill:transparent;*/
+  stroke-dashoffset:1645;
+  /*opacity:0;*/
+  /*fill:transparent;*/
 }
 
 to{
-	stroke-dashoffset:0;
-	/*opacity:1;*/
-	/*fill:#952A29;*/
+  stroke-dashoffset:0;
+  /*opacity:1;*/
+  /*fill:#952A29;*/
 }
 }
 
@@ -558,7 +560,7 @@ h2
 
 #thank{
   margin:35px;
-  font-family:raconteurNF;
+  font-family:poiretOne;
   font-size:3em;
 }
 
