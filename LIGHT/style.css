@@ -1,0 +1,560 @@
+ @font-face {
+  font-family: parkLane;
+  src: url(./FONT/ParkLaneNF.ttf);
+}
+
+ @font-face {
+  font-family: poiretOne;
+  src: url(./FONT/PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: nanumScript;
+  src: url(./FONT/NanumBrushScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: raconteurNF;
+  src: url(./FONT/RaconteurNF.ttf);
+}
+
+@font-face {
+  font-family: caveAt;
+  src: url(./FONT/caveatbrush-regular.ttf);
+}
+*
+{
+  color:#211F1F;
+  margin:0;
+}
+
+#logoBourges{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding:0px;
+  width:25%;
+  margin-bottom:-20px;
+  margin-top:-20px;
+}
+
+#logo{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding:0px;
+  width:15%;
+  margin-bottom:-20px;
+  margin-top:-20px;
+}
+
+body{
+  font-family:poiretOne;
+margin:auto;
+width: 100%;
+height: 100%;
+/*background-color:#211F1F;*/
+background-image:url("./ypaperBG.jpg");
+}
+
+h1
+{
+font-family:parkLane;
+margin:0;
+font-weight: 100;
+font-size:4.1vw;
+text-align:center;
+}
+
+#thick-border {
+/*position: absolute;*/
+opacity:0.9;
+     margin: auto;
+     top: 2px;
+     right: 0;
+     bottom: 10px;
+     left: 0;
+  width: 98.75%;
+  border: 9px solid #211F1F;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#border {
+/*position: absolute;*/
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+  width: 94.31%;
+  border: 4px solid #211F1F;
+  margin-top:-25px;
+  margin-bottom:-25px;
+}
+
+main{
+  min-height: 100vh;
+}
+
+#checkArticle
+{
+	margin:auto;
+	position:relative;
+	bottom: 10%;
+	margin-top:18%;
+	margin-left:10%;
+	transition: transform 1s,
+				opacity 2s 1s;
+}
+
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+label{
+font-family: poiretOne;
+font-size:2vw;
+cursor:pointer;
+display:block;
+}
+
+label svg { 
+  cursor: pointer;
+  height: 55px;
+  width: 55px;
+  position: relative;
+left: 0.5em;
+top: .3em;
+  border: 2px solid #211F1F;
+}
+
+#checkText
+{
+	display: inline-block;
+}
+
+input[type="checkbox"]:checked ~ label svg path {
+  stroke-dashoffset: 0;
+  stroke: currentColor;
+}
+
+label svg path {
+  transition: stroke-dashoffset .8s linear;
+}
+
+
+.buttonDiv {
+  margin-top:70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  left:0;
+  right:0;
+  opacity:0;
+  transition:  1s, 
+			  opacity 1.5s;
+}
+
+/*ORIGINAL CODE BY KONSTANTIN IVANOV
+https://codepen.io/mr-tamagotchi/pen/yzRQba*/
+.button {
+  text-transform: uppercase;
+  font-family: poiretOne;
+  letter-spacing: 0.4em;
+  font-size: 1.5em;
+  position: relative;
+  text-decoration: none;
+  padding: 0.5em;
+  box-shadow: inset 0 0 0 1px WHITE;
+  min-width: 340px;
+  text-align: center;
+}
+.button__label {
+  display: block;
+  background-color: transparent;
+  color: WHITE;
+  padding: 1.5em 2em;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+.button:hover .button__label, .button:focus .button__label {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.button__ornament {
+  position: absolute;
+}
+.button__ornament--vertical {
+  top: -0.5em;
+  bottom: -0.5em;
+  left: 0;
+  right: 0;
+}
+.button__ornament--horisontal {
+  left: -0.5em;
+  right: -0.5em;
+  top: 0;
+  bottom: 0;
+}
+.button__ornament-top-bottom, .button__ornament-left-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.button__ornament-top-bottom:before, .button__ornament-top-bottom:after, .button__ornament-left-right:before, .button__ornament-left-right:after {
+  content: '';
+  position: absolute;
+  background-color: WHITE;
+  transition: -webkit-transform 400ms cubic-bezier(0.54, 0.06, 0.39, 0.96);
+  transition: transform 400ms cubic-bezier(0.54, 0.06, 0.39, 0.96);
+  transition: transform 400ms cubic-bezier(0.54, 0.06, 0.39, 0.96), 
+  -webkit-transform 400ms cubic-bezier(0.54, 0.06, 0.39, 0.96);
+}
+.button__ornament-top-bottom:before, .button__ornament-top-bottom:after {
+  height: 2px;
+  left: 0;
+  right: 0;
+}
+.button__ornament-top-bottom:before {
+  top: 0;
+}
+.button__ornament-top-bottom:after {
+  bottom: 0;
+}
+.button__ornament-left-right:before, .button__ornament-left-right:after {
+  width: 2px;
+  top: 0;
+  bottom: 0;
+}
+.button__ornament-left-right:before {
+  left: 0;
+}
+.button__ornament-left-right:after {
+  right: 0;
+}
+.button:hover .button__ornament-left-right:before, .button:hover .button__ornament-left-right:after, .button:focus .button__ornament-left-right:before, .button:focus .button__ornament-left-right:after {
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+}
+.button:hover .button__ornament-top-bottom:before, .button:hover .button__ornament-top-bottom:after, .button:focus .button__ornament-top-bottom:before, .button:focus .button__ornament-top-bottom:after {
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+/*/////////////////////////////////////////////*/
+
+
+#identification
+{
+	position: absolute;
+  bottom:1vh;
+}
+
+#text-logo {
+  font-family: 'nanumScript';
+  fill:transparent;
+  stroke-dashoffset: 100%;
+  stroke-dasharray: 100%;
+  transition: all 10s; 
+}
+
+#save h1{
+  font-size:6.5vw;
+}
+
+.lines {
+  height: 0.4em;
+  width: 15%;
+  border-top: 2px solid #211F1F;
+  border-bottom: 2px solid #211F1F;
+  animation: drawLines 3s;
+}
+
+@keyframes drawLines {
+from{
+	width: 0%;
+}
+
+to{
+	width:15%;
+}
+}
+
+#date
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height:1em;
+  align-items: center;
+	margin:auto;
+	font-size: 14vw;
+	text-align:center;
+	font-family:raconteurNF;
+}
+
+.center
+{
+  margin:auto;
+  text-align:center;
+}
+
+
+
+#identificationCoord
+{
+	position: relative;
+	margin:0;
+	margin-top:5%;
+  margin-bottom:30px;
+	display:block;
+}
+
+#identificationCoord p
+{
+	margin-left:5%;
+	width:50%;
+	display: inline;
+	font-size: 7vw;
+	font-family:raconteurNF;
+}
+
+#coord
+{
+	float:right;
+	display:inline-block;
+	margin:0;
+	margin-top:-2%;
+	margin-right:5%;
+}
+
+#coord li
+{
+	text-align:right;
+	font-size:5vw;
+	font-family:parkLane;
+}
+
+li
+{list-style: none}
+
+#identificationCoord svg
+{
+
+	margin:0;
+	position:absolute;
+}
+
+
+#signId {
+  font-family: 'nanumScript';
+  fill:transparent;
+  stroke-dashoffset: 100%;
+  stroke-dasharray: 100%;
+  animation: draw 8s; 
+}
+
+@keyframes draw {
+from{
+	stroke-dashoffset:100%;
+	/*opacity:0;*/
+	/*fill:transparent;*/
+}
+
+to{
+	stroke-dashoffset:0;
+	/*opacity:1;*/
+	/*fill:#952A29;*/
+}
+}
+
+
+#section
+{
+width:12vw;
+	stroke-width:2px;
+	stroke-dashoffset: 0;
+  	stroke-dasharray: 1645;
+  left:0 !important;
+  right: 0 !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  display:block !important;
+	top:-52% !important;
+  animation:drawSection 15s;
+}
+
+@keyframes drawSection {
+from{
+	stroke-dashoffset:1645;
+	/*opacity:0;*/
+	/*fill:transparent;*/
+}
+
+to{
+	stroke-dashoffset:0;
+	/*opacity:1;*/
+	/*fill:#952A29;*/
+}
+}
+
+#idCanva
+{
+  left:9vw;
+}
+
+#bottomText{
+font-size:2em;
+margin-bottom:25px;
+margin-top:65px;
+}
+
+#topDeco{
+    margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:-29.8px;
+}
+
+#invitationTitle{
+  margin-top:20px;
+  margin-bottom: 20px;
+  font-size:8.5vw;
+}
+#centerLogo
+{
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  align-items: center;
+  margin:auto;
+    margin-top:5%;
+  margin-bottom: 5%;
+}
+
+#identificationNumber
+{
+  position:absolute;
+  top:35px;
+  left:68%;
+  font-family: poiretOne;
+  font-size:3em;
+}
+
+.underline
+{
+  border-bottom: 2px solid #211F1F;
+  padding-right: 155px;
+}
+
+#identificationNumber svg
+{
+  position:absolute;
+  top:12px;
+}
+
+#identificationNumber svg text
+{
+  font-family: 'nanumScript';
+  font-size:3.8em;
+}
+
+.smallTxt{
+  font-size:1.7vw;
+}
+
+#centerLogo svg
+{
+  width:19vw;
+}
+
+h2
+{
+  justify-content: center;
+  margin:auto;
+  font-size: 7.2vw;
+  font-family:raconteurNF;
+  padding-right:10px;
+  padding-left:10px;
+}
+
+#centerLogo .lines
+{
+  height: 3em;
+}
+
+#passCoord
+{
+  font-family: poiretOne;
+  text-transform: uppercase;
+  font-size:3vw;
+  display: block;
+  letter-spacing: 10px;
+  margin:10px;
+  margin-top:90px;
+  margin-bottom: 150px;
+}
+
+#pass
+{
+  text-align:left;
+  display:inline;
+}
+
+#passCoord svg
+{
+  position:absolute;
+  right:40px;
+  letter-spacing: normal!important;
+}
+
+#mdp
+{
+  font-family: caveAt;
+}
+
+#place{
+  display:inline;
+  float:right;
+  text-align:right;
+}
+
+#dressCode
+{
+
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  align-items: center;
+  color: white;
+  margin:auto;
+  margin-top:90px;
+  margin-bottom:90px;
+  font-size: 2.5em;
+  text-align:center;
+  font-family:raconteurNF;
+}
+
+#dressCode p
+{
+
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#thank{
+  margin:35px;
+  font-family:poiretOne;
+  font-size:3em;
+}
+
+.smallTitle{
+  font-size:4em!important;
+  text-align:center;
+}
