@@ -95,7 +95,7 @@ if(data!=null)
 	console.log("get id ="+id);
 	console.log("get cookie ="+cook);
 	if((cook =="" ||cook==null || cook == 'undefined') && (id!=null||id!=""))
-		document.cookie = "id="+id+"; expires=Thu, 05 Dec 2019 00:00:00 UTC; path=/;";
+		document.cookie = "id="+id+"; expires=Thu, 05 Dec 2059 00:00:00 UTC; path=/;";
 	else
 		id=cook;
 	
